@@ -1,0 +1,57 @@
+﻿@model Projeto.MVC.Models.AutorViewModelConsulta
+
+@{
+    ViewBag.Title = "Consulta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>Lista de Autores</h2>
+<br />
+<div class="alert-danger">
+    @Html.DisplayFor(model => model.MensagemErro)
+</div>
+<hr />
+@if (Model.Autores.Count != 0)
+{
+    <table class="table table-bordered">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdAutor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.QtdLivros)
+            </th>
+            <th>
+                @Html.DisplayName("Opções")
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Autores)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdAutor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.QtdLivros)
+                </td>
+                <td>
+                    @Html.ActionLink("Atualizar", "Atualiza", new { id = item.IdAutor }) |
+                    @Html.ActionLink("Deletar", "Deleta", new { id = item.IdAutor }, new { onclick = "return confirm('Tem certeza que deseja deletar?');" })
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <div class="alert alert-warning">
+        Não tem registros.
+    </div>
+}

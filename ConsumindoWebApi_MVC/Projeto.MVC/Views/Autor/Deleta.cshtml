@@ -1,0 +1,51 @@
+﻿
+@model Projeto.MVC.Models.AutorViewModelExcluir
+
+@{
+    ViewBag.Title = "Deleta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<h2>Deletar Autor</h2>
+<br />
+<div class="alert-danger">
+    @Html.DisplayFor(model => model.MensagemErro)
+</div>
+<hr />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAutor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAutor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QtdLivros)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QtdLivros)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Deletar Autor" class="btn btn-primary" />
+        </div>
+    }
+</div>

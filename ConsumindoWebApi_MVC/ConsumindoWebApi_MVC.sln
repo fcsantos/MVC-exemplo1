@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Sistema", "1 - Sistema", "{8B65E623-0F50-4AC0-AC49-5727E4EB55D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projeto.MVC", "Projeto.MVC\Projeto.MVC.csproj", "{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BEFC4AD-CC2A-4FF6-BD53-293D0DC5615D} = {8B65E623-0F50-4AC0-AC49-5727E4EB55D1}
+	EndGlobalSection
+EndGlobal
