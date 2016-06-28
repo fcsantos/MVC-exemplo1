@@ -42,8 +42,8 @@
                     @Html.DisplayFor(modelItem => item.QtdLivros)
                 </td>
                 <td>
-                    @Html.ActionLink("Atualizar", "Atualiza", new { id = item.IdAutor }) |
-                    @Html.ActionLink("Deletar", "Deleta", new { id = item.IdAutor }, new { onclick = "return confirm('Tem certeza que deseja deletar?');" })
+                    @Html.ActionLink("Atualizar", "Atualiza", new { id = item.IdAutor }, new { @class = "btn btn-primary" }) |
+                    @Html.ActionLink("Deletar", "Deleta", new { id = item.IdAutor }, new { onclick = "return confirm('Tem certeza que deseja deletar?');", @class = "btn btn-danger" })
                 </td>
             </tr>
         }
